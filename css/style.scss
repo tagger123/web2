@@ -1,0 +1,151 @@
+$backgrund-one: #f7f7f7;
+$backgrund-two: #e6e4de;
+$text-one: #303030;
+$text-two: #929292;
+$section-one: #6c524b;
+$section-two: #e6e4de;
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Baloo Paaji 2', cursive;
+    overflow-x: hidden;
+}
+@keyframes opacity {
+  0%   {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(39vw);
+  }
+  100% {
+    transform: translateX(0vw);
+  }
+}
+a{
+  text-decoration: none;
+  color: #000000;
+}
+.nav-bar{
+  background-color: $backgrund-one;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 2fr 7fr 3fr;
+  .logo{
+    font-size: 35px;
+    margin-left: 4vw;
+    line-height: 25px;
+    p{
+      font-size: 15px;
+    }
+  }
+}
+.navbar {
+  overflow: hidden;
+  a {
+    line-height: 0px;
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  .dropbtn {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    padding: 14px 16px;
+    background-color: inherit;
+    font: inherit;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $backgrund-one;
+    width: 100%;
+    left: 0;
+    z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  .column {
+    animation-name: opacity;
+    animation-duration: .6s;
+    float: left;
+    width: 20vw;
+    height: 75vh;
+      a {
+        float: none;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+        display: block;
+        text-align: center;
+
+      }
+      h3{
+        text-align: center;
+      }
+  }
+  .column-img{
+    float: left;
+    animation: slideIn 1.5s ease-in-out;
+    background-color: $backgrund-two;
+    width: 39vw;
+    height: 75vh;
+    text-align: center;
+      img{
+        display: block;
+        margin: auto;
+        margin-top: 5vh;
+        height: 50vh;
+        width: 15vw;
+      }
+  }
+
+}
+.icons{
+  text-align: center;
+  padding: 14px 16px;
+  a{
+    font-size: 16px;
+  }
+}
+
+.section-one{
+  background-color: $section-one;
+  display: grid;
+  grid-template-columns: 8fr 4fr;
+  height: 100vh;
+  .image{
+    overflow: hidden;
+    img{
+      width: 33vw;
+      height: 100vh;
+    }
+  }
+  .text{
+    margin-top: 30vh;
+    text-align: center;
+    animation: opacity 3s;
+    h5{
+      font-size: 20px;
+      color: #ffffff;
+    }
+    p{
+      font-size: 42px;
+    }
+    a{
+      font-size: 20px;
+      color: #ffffff;
+      background-color: inherit;
+      text-decoration-line: underline;
+    }
+  }
+}
