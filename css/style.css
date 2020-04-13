@@ -5,6 +5,10 @@
   overflow-x: hidden;
 }
 
+.mobile {
+  display: none;
+}
+
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
@@ -60,13 +64,13 @@ a {
 }
 
 .nav-bar .logo {
-  font-size: 35px;
+  font-size: 2vw;
   margin-left: 4vw;
   line-height: 25px;
 }
 
 .nav-bar .logo p {
-  font-size: 15px;
+  font-size: .8vw;
 }
 
 .navbar {
@@ -91,7 +95,7 @@ a {
   font-size: 16px;
   border: none;
   outline: none;
-  padding: 14px 16px;
+  padding: 1vh 1vw;
   background-color: inherit;
   font: inherit;
 }
@@ -156,6 +160,7 @@ a {
 }
 
 .icons a {
+  margin-left: 30px;
   font-size: 16px;
 }
 
@@ -179,17 +184,21 @@ a {
 
 .section-one .text {
   margin-top: 30vh;
+  margin-left: 20vw;
+  margin-right: 20vw;
   text-align: center;
   -webkit-animation: opacity 3s;
           animation: opacity 3s;
+  line-height: 36px;
 }
 
 .section-one .text h5 {
   font-size: 20px;
-  color: #ffffff;
+  color: #c4c4c4;
 }
 
 .section-one .text p {
+  overflow: hidden;
   font-size: 42px;
 }
 
@@ -199,5 +208,89 @@ a {
   background-color: inherit;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .desktop {
+    display: none;
+  }
+  .nav-bar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+    padding-top: 20px;
+  }
+  .nav-bar .logo {
+    font-size: 4vw;
+    margin-left: 4vw;
+    line-height: 25px;
+  }
+  .nav-bar .logo p {
+    overflow: hidden;
+    font-size: 1.6vw;
+  }
+  .section-one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .nav-bar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+    padding-top: 20px;
+  }
+  .nav-bar .logo {
+    font-size: 5vw;
+    margin-left: 4vw;
+    line-height: 25px;
+  }
+  .nav-bar .logo p {
+    overflow: hidden;
+    font-size: 1.9vw;
+  }
+  .section-one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .desktop {
+    display: none;
+  }
+  .nav-bar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 6fr 6fr;
+        grid-template-columns: 6fr 6fr;
+    padding-top: 20px;
+  }
+  .nav-bar .logo {
+    font-size: 9vw;
+    padding-left: 4vw;
+    line-height: 32px;
+  }
+  .nav-bar .logo p {
+    overflow: hidden;
+    font-size: 3.4vw;
+  }
+  .section-one {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
 }
 /*# sourceMappingURL=style.css.map */

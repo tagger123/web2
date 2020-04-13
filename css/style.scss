@@ -11,6 +11,9 @@ $section-two: #e6e4de;
     font-family: 'Baloo Paaji 2', cursive;
     overflow-x: hidden;
 }
+.mobile{
+  display: none;
+}
 @keyframes opacity {
   0%   {opacity: 0;}
   100% {opacity: 1;}
@@ -33,11 +36,11 @@ a{
   display: grid;
   grid-template-columns: 2fr 7fr 3fr;
   .logo{
-    font-size: 35px;
+    font-size: 2vw;
     margin-left: 4vw;
     line-height: 25px;
     p{
-      font-size: 15px;
+      font-size: .8vw;
     }
   }
 }
@@ -59,7 +62,7 @@ a{
     font-size: 16px;  
     border: none;
     outline: none;
-    padding: 14px 16px;
+    padding: 1vh 1vw;
     background-color: inherit;
     font: inherit;
   }
@@ -108,12 +111,12 @@ a{
         width: 15vw;
       }
   }
-
 }
 .icons{
   text-align: center;
   padding: 14px 16px;
   a{
+    margin-left: 30px;
     font-size: 16px;
   }
 }
@@ -132,13 +135,18 @@ a{
   }
   .text{
     margin-top: 30vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
     text-align: center;
     animation: opacity 3s;
+    line-height: 36px;
     h5{
+      
       font-size: 20px;
-      color: #ffffff;
+      color: #c4c4c4;
     }
     p{
+      overflow: hidden;
       font-size: 42px;
     }
     a{
@@ -147,5 +155,75 @@ a{
       background-color: inherit;
       text-decoration-line: underline;
     }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .desktop{
+    display: none;
+  }
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-top: 20px;
+    .logo{
+      font-size: 4vw;
+      margin-left: 4vw;
+      line-height: 25px;
+      p{
+        overflow: hidden;
+        font-size: 1.6vw;
+      }
+    }
+  }
+  .section-one{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 481px) and (max-width: 767px) {
+  .desktop{
+    display: none;
+  }
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-top: 20px;
+    .logo{
+      font-size: 5vw;
+      margin-left: 4vw;
+      line-height: 25px;
+      p{
+        overflow: hidden;
+        font-size: 1.9vw;
+      }
+    }
+  }
+  .section-one{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 320px) and (max-width: 480px) {
+  .desktop{
+    display: none;
+  }
+  .nav-bar{
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    padding-top: 20px;
+    .logo{
+      font-size: 9vw;
+      padding-left: 4vw;
+      line-height: 32px;
+      p{
+        overflow: hidden;
+        font-size: 3.4vw;
+      }
+    }
+  }
+  .section-one{
+    display: grid;
+    grid-template-columns: 1fr;
   }
 }
