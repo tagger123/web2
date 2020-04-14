@@ -239,15 +239,17 @@ a{
   }
 }
 .section-five{
+  background-color: $section-one;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1vw;
   grid-template-columns: repeat(2, 1fr);
   padding-left: 5vw;
   padding-right: 5vw;
   .img-text{
     position: relative;
+    width: 45vw;
     img{
-      width: 40vw;
+      width: 45vw;
       height: 90vh;
     }
     .text{
@@ -259,7 +261,7 @@ a{
   }
   .offer{
     background-color: $section-one;
-    width: 39vw;
+    width: 50vw;
     height: 90vh;
     text-align: center;
       img{

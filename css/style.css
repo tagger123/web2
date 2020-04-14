@@ -316,9 +316,10 @@ a {
 }
 
 .section-five {
+  background-color: #6c524b;
   display: -ms-grid;
   display: grid;
-  grid-gap: 20px;
+  grid-gap: 1vw;
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   padding-left: 5vw;
@@ -327,10 +328,11 @@ a {
 
 .section-five .img-text {
   position: relative;
+  width: 45vw;
 }
 
 .section-five .img-text img {
-  width: 40vw;
+  width: 45vw;
   height: 90vh;
 }
 
@@ -344,7 +346,7 @@ a {
 
 .section-five .offer {
   background-color: #6c524b;
-  width: 39vw;
+  width: 50vw;
   height: 90vh;
   text-align: center;
 }
